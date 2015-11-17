@@ -1,12 +1,12 @@
 /**
  * Created by chandani on 11/12/15.
  */
-public class GradientDescent {
+public class LinearGradientDescent {
 
     public double[][] theta;
     public double[] J_history;
 
-    /********get GradientDescent*******/
+    /********get LinearGradientDescent*******/
     /****data[][] is featureNormalized X***/
     public double[][] getGradient(double[][] X, double[][] y, double alpha, int iter){
         int row = X.length;
@@ -36,7 +36,7 @@ public class GradientDescent {
             }
             theta = newtheta;
 
-            Cost costObj = new Cost();
+            LinearCost costObj = new LinearCost();
             J_history[k] = costObj.cost(X, y, theta);
         }
         this.theta = theta;

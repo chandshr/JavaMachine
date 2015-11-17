@@ -1,7 +1,7 @@
 /**
  * Created by chandani on 11/13/15.
  */
-public class Cost {
+public class LinearCost {
     public double cost(double[][]X, double[][]y, double[][]theta){
         int row = X.length;
         int col = X[0].length;

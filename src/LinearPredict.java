@@ -1,7 +1,7 @@
 /**
  * Created by shrestha on 11/16/2015.
  */
-public class Predict {
+public class LinearPredict {
 
     public double predict(double[][] input, double[][] mean, double[][] std, double[][] theta){
         int col = input[0].length;
