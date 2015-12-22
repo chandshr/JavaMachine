@@ -39,8 +39,8 @@ public class Linear {
             /*******X and y end******/
 
             /*******feature normalization start*******/
-            double[][] featureNormData = new double[row][col];
             FeatureNormalize featureNormalize = new FeatureNormalize();
+            double[][] featureNormData = new double[row][col];
             featureNormData = featureNormalize.getFeatureNormalize(X);
 
             X = new double[row][col];

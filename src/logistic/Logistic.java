@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 /**
  * Created by shrestha on 11/16/2015.
+ * change alpha and number of iterations to get higher number of accuracy
  */
 public class Logistic {
     public void get(){
@@ -41,7 +42,7 @@ public class Logistic {
 
             /*** Initial Cost Start ***/
             double[][] initalTheta = {{0}, {0}, {0}};
-            double alpha = 0.01;
+            double alpha = 0.001;
             LogisticCost logisticCost = new LogisticCost();
             double initialCost = logisticCost.getCost(initalTheta, X, y, alpha);
             System.out.println("Logistic Initial Cost: "+initialCost);
@@ -50,21 +51,25 @@ public class Logistic {
 
             /***********iterations to find the optimum theta(gradient Descent) start**********/
             LogisticGradientDescent logisticGradientDescent = new LogisticGradientDescent();
-            //int iter = 4000000; //87% accuracy given
-            int iter = 40000000; //88% accuracy given
+            //int iter = 4000000; //87% accuracy given and alpha 0.01
+            //int iter = 40000000; //88% accuracy given and alpha 0.01
+            int iter = 400000; //91% accuracy and alpha 0.001
             double[][] gradTheta = logisticGradientDescent.minTheta(initalTheta, X, y, iter, alpha);
+//            double[][] gradTheta = {{-10.632767580100028}, {0.0904557645032425}, {0.08425697183190725}};
             double gradCost = logisticCost.getCost(gradTheta, X, y, alpha);
             System.out.println("Logistic Regression Cost with Gradient Descent: "+gradCost);
             /***********iterations to find the optimum theta(gradient Descent) end**********/
 
             /***********Logistic Predictions Start**********/
             LogisticPredict logisticPredict = new LogisticPredict();
-            double[][] input = {{0.322,0.5826,1}};
+            double[][] input = {{60.18259938620976,86.30855209546826,1}};
             double prob = logisticPredict.probability(gradTheta, input);
             System.out.println("Logistic Probability of getting {0.322,0.5826,1}: "+prob);
             double[][] pred =  logisticPredict.predict(gradTheta, X);
             double accPercent = logisticPredict.accuracy(pred, y);
             System.out.println("Logistic Regression Accuracy Percentage: "+accPercent+"%");
+            double[][] input1 = {{1, 60.18259938620976,86.30855209546826}};
+            System.out.println("predict "+logisticPredict.predict(gradTheta, input1)[0][0]);
             /***********Logistic Predictions End**********/
 
             /*********Increment feature Start: This is incomplete, need to work on MapFeature; Mapfeature class is incomplete)******/

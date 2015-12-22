@@ -39,12 +39,14 @@ public class LogisticCost {
         double[][] XthetaMult = matrix.multMatrix(X, theta);
         int XthetaMultRow = XthetaMult.length;
         int XthetaMultCol = XthetaMult[0].length;
-        double[][] h = new double[XthetaMultRow][XthetaMultCol];
+//        double[][] h = new double[XthetaMultRow][XthetaMultCol];
+        double[][] h = new double[XthetaMultRow][1];
 
         for(int i=0; i<XthetaMultRow; i++){
-            for(int j=0; j<XthetaMultCol; j++){
-                h[i][j] = sigmoid.get(XthetaMult[i][j]);
-            }
+//            for(int j=0; j<XthetaMultCol; j++){
+//                h[i][j] = sigmoid.get(XthetaMult[i][j]);
+//            }
+            h[i][0] = sigmoid.get(XthetaMult[i][0]);
         }
 
         /**********cost start************/
