@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4305a29a-a124-4ee6-ab95-1f39b8206226" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/backX.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/feedforwardTheta1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/feedforwardTheta2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/feedforwardX.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/feedforwardY.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/neuralNetwok/BackpropagationCost.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/neuralNetwok/Backwardpropopagation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/neuralNetwok/CheckNeuralNetworkGradients.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/neuralNetwok/ComputeNumericalGradient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/Main.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/all/Matrix.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/all/Matrix.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/all/Sigmoid.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/all/Sigmoid.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/linear/Linear.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/linear/Linear.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/logistic/Logistic.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/logistic/Logistic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/logistic/LogisticCost.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/logistic/LogisticCost.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/neuralNetwok/FeedForward.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/neuralNetwok/FeedForward.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaMachine/neuralNetwok/randInitializeWeights.class" afterPath="$PROJECT_DIR$/out/production/javaMachine/neuralNetwok/randInitializeWeights.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/all/Matrix.java" afterPath="$PROJECT_DIR$/src/all/Matrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/all/Sigmoid.java" afterPath="$PROJECT_DIR$/src/all/Sigmoid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/linear/Linear.java" afterPath="$PROJECT_DIR$/src/linear/Linear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logistic/Logistic.java" afterPath="$PROJECT_DIR$/src/logistic/Logistic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logistic/LogisticCost.java" afterPath="$PROJECT_DIR$/src/logistic/LogisticCost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/neuralNetwok/FeedForward.java" afterPath="$PROJECT_DIR$/src/neuralNetwok/FeedForward.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/neuralNetwok/randInitializeWeights.java" afterPath="$PROJECT_DIR$/src/neuralNetwok/randInitializeWeights.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java" afterPath="$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java" />
     </list>
     <ignored path="javaMachine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,17 +30,17 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DebugInitializeWeights.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DebugInitializeWeights.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.5271318">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,16 +62,16 @@
         <entry file="file://$PROJECT_DIR$/src/neuralNetwok/ComputeNumericalGradient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="30" selection-start-line="24" selection-start-column="12" selection-end-line="29" selection-end-column="30" />
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BackpropagationCost.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BackpropagationCost.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/neuralNetwok/BackpropagationCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
+            <state vertical-scroll-proportion="0.0">
               <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -175,17 +150,17 @@
         <option value="$PROJECT_DIR$/src/data/feedX.txt" />
         <option value="$PROJECT_DIR$/src/data/feedTheta1" />
         <option value="$PROJECT_DIR$/src/data/feedY.txt" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/data/test.txt" />
         <option value="$PROJECT_DIR$/src/all/Sigmoid.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Character.java" />
         <option value="$PROJECT_DIR$/src/all/Matrix.java" />
         <option value="$PROJECT_DIR$/src/data/feedforwardX.txt" />
         <option value="$PROJECT_DIR$/src/data/feedforwardY.txt" />
-        <option value="$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java" />
         <option value="$PROJECT_DIR$/src/neuralNetwok/BackpropagationCost.java" />
         <option value="$PROJECT_DIR$/src/neuralNetwok/ComputeNumericalGradient.java" />
         <option value="$PROJECT_DIR$/src/neuralNetwok/Backwardpropopagation.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java" />
       </list>
     </option>
   </component>
@@ -588,7 +563,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -698,12 +673,6 @@
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="192" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/neuralNetwok/BackpropagationCost.java</url>
           <line>201</line>
           <properties />
@@ -727,8 +696,32 @@
           <properties />
           <option name="timeStamp" value="222" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java</url>
+          <line>7</line>
+          <properties class="neuralNetwok.DebugInitializeWeights" method="createMatrix" />
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="223" />
+      <option name="time" value="231" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1061,22 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/neuralNetwok/ComputeNumericalGradient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="30" selection-start-line="24" selection-start-column="12" selection-end-line="29" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/feedforwardTheta1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1109,14 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/neuralNetwok/Backwardpropopagation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1129,11 +1098,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/neuralNetwok/BackpropagationCost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
+        <state vertical-scroll-proportion="0.0">
           <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/neuralNetwok/ComputeNumericalGradient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/neuralNetwok/DebugInitializeWeights.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5271318">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

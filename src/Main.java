@@ -1,6 +1,7 @@
 import all.TextToArr;
 import neuralNetwok.BackpropagationCost;
 import neuralNetwok.Backwardpropopagation;
+import neuralNetwok.DebugInitializeWeights;
 import neuralNetwok.FeedForward;
 
 import java.io.File;
@@ -19,8 +20,10 @@ public class Main {
         /*********FeedForward Neural Network End********/
 
         /*****Backward Propagation Start***/
-        Backwardpropopagation backwardpropopagation = new Backwardpropopagation();
-        backwardpropopagation.get();
+//        Backwardpropopagation backwardpropopagation = new Backwardpropopagation();
+//        backwardpropopagation.get();
+        DebugInitializeWeights debugInitializeWeights = new DebugInitializeWeights();
+        debugInitializeWeights.createMatrix(5, 3);
         /*****Backward Propagation End***/
 
         /******Linear Regression Start******/
