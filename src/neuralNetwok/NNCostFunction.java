@@ -6,17 +6,12 @@ import all.Sigmoid;
 /**
  * Created by shrestha on 12/18/2015.
  */
-public class BackpropagationCost {
+public class NNCostFunction {
 
-    public double[][] gradtheta1;
-    public double[][] gradtheta2;
+    public double[][] gradtheta;
 
-    public double[][] gettheta1() {
-        return gradtheta1;
-    }
-
-    public double[][] gettheta2() {
-        return gradtheta2;
+    public double[][] gettheta() {
+        return gradtheta;
     }
 
     public double cost(double[][] theta, int inputlayersize, int hiddenlayersize,
@@ -30,9 +25,9 @@ public class BackpropagationCost {
         /***** Theta1 start *****/
         double[][] theta1 = new double[hiddenlayersize][inputlayersize+1];
         int thetaCount = 0;
-        for(int i=0; i<hiddenlayersize; i++){
-            for(int j=0; j<inputlayersize+1; j++){
-                theta1[i][j] = theta[thetaCount][0];
+        for(int i=0; i<inputlayersize+1; i++){
+            for(int j=0; j<hiddenlayersize; j++){
+                theta1[j][i] = theta[thetaCount][0];
                 thetaCount++;
             }
         }
@@ -40,9 +35,9 @@ public class BackpropagationCost {
 
         /*** Theta2 start ***/
         double[][] theta2 = new double[numlabels][hiddenlayersize+1];
-        for(int i=0; i<numlabels; i++){
-            for(int j=0; j<hiddenlayersize+1; j++){
-                theta2[i][j] = theta[thetaCount][0];
+        for(int i=0; i<hiddenlayersize+1; i++){
+            for(int j=0; j<numlabels; j++){
+                theta2[j][i] = theta[thetaCount][0];
                 thetaCount++;
             }
         }
@@ -194,13 +189,13 @@ public class BackpropagationCost {
         theta2Filtered = thetaMultByElement(theta2Filtered, x);
 
         temp1 = matrix.elementwiseOp(temp1, theta1Filtered, "+");
-        temp2 = matrix.elementwiseOp(temp2, theta1Filtered, "+");
+        temp2 = matrix.elementwiseOp(temp2, theta2Filtered, "+");
 
         theta1Grad = matrix.copy(theta1Grad, temp1, 1);
         theta2Grad = matrix.copy(theta2Grad, temp2, 1);
 
-        this.gradtheta1 = theta1Grad;
-        this.gradtheta2 = theta2Grad;
+        Backwardpropopagation backwardpropopagation = new Backwardpropopagation();
+        this.gradtheta = backwardpropopagation.combineTheta(theta1Grad, theta2Grad);
 
         return J;
         /***** cost positive and negative end ****/

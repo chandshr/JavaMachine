@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class Backwardpropopagation {
     public void get(){
-        BackpropagationCost backpropagationCost = new BackpropagationCost();
+        NNCostFunction NNCostFunction = new NNCostFunction();
         TextToArr textToArr = new TextToArr();
         try {
             File currentDirectory = new File(new File(".").getAbsolutePath());
@@ -39,7 +39,7 @@ public class Backwardpropopagation {
             int hiddenLayerSize = 25;
             int numLabels = 10;
             double lambda = 0;
-            backpropagationCost.cost(theta, inputLayerSize, hiddenLayerSize, numLabels, X, y, lambda);
+            NNCostFunction.cost(theta, inputLayerSize, hiddenLayerSize, numLabels, X, y, lambda);
         }catch (IOException e){
             e.printStackTrace(); //given input file not found exception
         }
@@ -48,15 +48,15 @@ public class Backwardpropopagation {
     public double[][] combineTheta(double[][] theta1, double[][] theta2){
         double[][] theta = new double[theta1.length*(theta1[0].length)+theta2.length*(theta2[0].length)][1];
         int count = 0;
-        for(int i=0; i<theta1.length; i++){
-            for(int j=0; j<theta1[0].length; j++){
-                theta[count][0] = theta1[i][j];
+        for(int i=0; i<theta1[0].length; i++){
+            for(int j=0; j<theta1.length; j++){
+                theta[count][0] = theta1[j][i];
                 count++;
             }
         }
-        for(int i=0; i<theta2.length; i++){
-            for(int j=0; j<theta2[0].length; j++){
-                theta[count][0] = theta2[i][j];
+        for(int i=0; i<theta2[0].length; i++){
+            for(int j=0; j<theta2.length; j++){
+                theta[count][0] = theta2[j][i];
                 count++;
             }
         }

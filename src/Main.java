@@ -1,12 +1,4 @@
-import all.TextToArr;
-import neuralNetwok.BackpropagationCost;
-import neuralNetwok.Backwardpropopagation;
-import neuralNetwok.DebugInitializeWeights;
-import neuralNetwok.FeedForward;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
+import neuralNetwok.*;
 
 /**
  * Created by shresc2 on 11/10/2015.
@@ -22,8 +14,13 @@ public class Main {
         /*****Backward Propagation Start***/
 //        Backwardpropopagation backwardpropopagation = new Backwardpropopagation();
 //        backwardpropopagation.get();
-        DebugInitializeWeights debugInitializeWeights = new DebugInitializeWeights();
-        debugInitializeWeights.createMatrix(5, 3);
+//        double[][] a = {{1, 2}, {3, 4}};
+//        double[][] b = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//        backwardpropopagation.combineTheta(a, b);
+//        DebugInitializeWeights debugInitializeWeights = new DebugInitializeWeights();
+//        debugInitializeWeights.createMatrix(5, 3);
+        CheckNNGradients checkNNGradients = new CheckNNGradients();
+        checkNNGradients.checkNeuralNetwork(0);
         /*****Backward Propagation End***/
 
         /******Linear Regression Start******/

@@ -127,4 +127,23 @@ public class Matrix {
         return result;
     }
     /***copy content End***/
+
+    /**
+     * normalize the given matrix
+     * n = norm(v,p) returns the vector norm defined by sum(abs(v)^p)^(1/p), where p is any positive
+     * here p is 2
+     */
+
+    public double getNorm(double[][] input){
+        int row = input.length;
+        int col = input[0].length;
+
+        double squareSum = 0;
+        for(int i=0; i<row; i++){
+            for(int j=0; j<col; j++){
+                squareSum += input[i][j]*input[i][j];
+            }
+        }
+        return Math.sqrt(squareSum);
+    }
 }
