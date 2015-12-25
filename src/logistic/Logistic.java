@@ -1,5 +1,6 @@
 package logistic;
 
+import all.GradientDescent;
 import all.TextToArr;
 import linear_logistic.MapFeature;
 import linear_logistic.RegularizedGradient;
@@ -46,16 +47,21 @@ public class Logistic {
             LogisticCost logisticCost = new LogisticCost();
             double initialCost = logisticCost.getCost(initalTheta, X, y, alpha);
             System.out.println("Logistic Initial Cost: "+initialCost);
-            double[][] initialGrad = logisticCost.getGrad();
+            double[][] initialGrad = logisticCost.getGrad(); //del
+//            double[][] initialGrad = initalTheta; // not del
             /*** Initial Cost End ***/
 
             /***********iterations to find the optimum theta(gradient Descent) start**********/
             LogisticGradientDescent logisticGradientDescent = new LogisticGradientDescent();
             //int iter = 4000000; //87% accuracy given and alpha 0.01
             //int iter = 40000000; //88% accuracy given and alpha 0.01
-            int iter = 400000; //91% accuracy and alpha 0.001
-            double[][] gradTheta = logisticGradientDescent.minTheta(initalTheta, X, y, iter, alpha);
-//            double[][] gradTheta = {{-10.632767580100028}, {0.0904557645032425}, {0.08425697183190725}};
+//            int iter = 400000; //91% accuracy and alpha 0.001
+            int iter = 4000; //91% accuracy and alpha 0.001
+            //start Dec 23
+            GradientDescent gradientDescent = new GradientDescent();
+            //end Dec 23
+            double[][] gradTest = logisticGradientDescent.minTheta(initalTheta, X, y, iter, alpha); //old
+            double[][] gradTheta = gradientDescent.getGradientDescent(initalTheta, X, y, iter, alpha);
             double gradCost = logisticCost.getCost(gradTheta, X, y, alpha);
             System.out.println("Logistic Regression Cost with Gradient Descent: "+gradCost);
             /***********iterations to find the optimum theta(gradient Descent) end**********/

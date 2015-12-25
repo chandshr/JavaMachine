@@ -1,5 +1,6 @@
 package logistic;
 
+import all.GradientDescent;
 import all.Matrix;
 import all.Sigmoid;
 
@@ -8,6 +9,8 @@ import all.Sigmoid;
  */
 public class LogisticCost {
 
+    //del start
+    private double[][] grad;
     public double[][] getGrad() {
         return grad;
     }
@@ -15,6 +18,7 @@ public class LogisticCost {
     public void setGrad(double[][] grad) {
         this.grad = grad;
     }
+    //del end
 
     public double getCost() {
         return cost;
@@ -24,7 +28,6 @@ public class LogisticCost {
         this.cost = cost;
     }
 
-    private double[][] grad;
     private double cost;
 
     public double getCost(double[][] theta, double[][] X, double[][] y, double alpha){
@@ -57,8 +60,9 @@ public class LogisticCost {
             costPos += (-y[i][0]*Math.log(h[i][0]));
             costNeg += (1-y[i][0])*Math.log(1-h[i][0]);
         }
+        /**** cost end ****/
 
-        /********transpose multiplication start*********/
+        /********Gradient Descent start*********/
         double[][] diff = new double[y.length][1];
         for(int i=0; i<y.length; i++){
             diff[i][0] = h[i][0]-y[i][0];
@@ -71,7 +75,7 @@ public class LogisticCost {
             this.grad[i][0] = theta[i][0]-(alpha/row*multOfXtransDiff[i][0]);
 //            this.grad[i][0] = (1/row)*multOfXtransDiff[i][0];
         }
-        /********transpose multiplication end*********/
+        /********Gradient Descent end*********/
 
         double J = (costPos-costNeg)/row;
         this.cost = J;

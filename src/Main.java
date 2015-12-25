@@ -1,3 +1,4 @@
+import logistic.Logistic;
 import neuralNetwok.*;
 
 /**
@@ -19,8 +20,8 @@ public class Main {
 //        backwardpropopagation.combineTheta(a, b);
 //        DebugInitializeWeights debugInitializeWeights = new DebugInitializeWeights();
 //        debugInitializeWeights.createMatrix(5, 3);
-        CheckNNGradients checkNNGradients = new CheckNNGradients();
-        checkNNGradients.checkNeuralNetwork(0);
+//        CheckNNGradients checkNNGradients = new CheckNNGradients();
+//        checkNNGradients.checkNeuralNetwork(0);
         /*****Backward Propagation End***/
 
         /******Linear Regression Start******/
@@ -29,8 +30,8 @@ public class Main {
         /******Linear Regression End******/
 
         /*******Logistic Regression Start*******/
-//        Logistic logisticReg = new Logistic();
-//        logisticReg.get();
+        Logistic logisticReg = new Logistic();
+        logisticReg.get();
         /*******Logistic Regression End*******/
     }
 }
